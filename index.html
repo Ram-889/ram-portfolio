@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Link CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ==== NAVBAR ==== -->
+  <header class="navbar">
+    <div class="logo">R</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ==== HERO / HOME ==== -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Ram</span></h1>
+      <h2>Aspiring AI & ML Engineer</h2>
+      <p>
+        I'm a B.Tech AIML student who loves building machine learning and deep learning projects
+        and turning ideas into working applications.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn outline">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== ABOUT ==== -->
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-text">
+      I am passionate about Artificial Intelligence and Machine Learning. I enjoy exploring
+      topics like computer vision, NLP, and deep learning. I love learning by doing, especially
+      through projects and experiments.
+    </p>
+  </section>
+
+  <!-- ==== SKILLS ==== -->
+  <section id="skills" class="section">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Programming</h3>
+        <p>Python, C/C++, OOP, Data Structures</p>
+      </div>
+      <div class="skill-card">
+        <h3>Machine Learning</h3>
+        <p>Scikit-learn, Regression, Classification, Clustering</p>
+      </div>
+      <div class="skill-card">
+        <h3>Deep Learning</h3>
+        <p>TensorFlow, PyTorch, CNN, RNN/LSTM</p>
+      </div>
+      <div class="skill-card">
+        <h3>Tools & Others</h3>
+        <p>Pandas, NumPy, Matplotlib, SQL, Git & GitHub</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== PROJECTS ==== -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Face Mask Detection</h3>
+        <p>
+          A CNN-based model that detects whether a person is wearing a mask using image data.
+          Integrated with OpenCV for real-time detection.
+        </p>
+        <p class="tech">Python · TensorFlow · OpenCV</p>
+        <!-- Replace # with GitHub link -->
+        <a href="#" target="_blank">View on GitHub →</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Movie Review Sentiment Analysis</h3>
+        <p>
+          Classifies movie reviews as positive or negative using ML algorithms and LSTM-based
+          deep learning.
+        </p>
+        <p class="tech">Python · Scikit-learn · LSTM</p>
+        <a href="#" target="_blank">View on GitHub →</a>
+      </div>
+
+      <div class="project-card">
+        <h3>CIFAR-10 Image Classifier</h3>
+        <p>
+          Deep CNN for classifying images from the CIFAR-10 dataset, with data augmentation and
+          regularization.
+        </p>
+        <p class="tech">PyTorch · CNN · CIFAR-10</p>
+        <a href="#" target="_blank">View on GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== CONTACT ==== -->
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-text">
+      Interested in collaborating, offering an internship, or discussing AI/ML? Feel free to reach out!
+    </p>
+    <div class="contact-info">
+      <!-- Put your real details here -->
+      <p><strong>Email:</strong> youremail@example.com</p>
+      <p><strong>Location:</strong> India</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © <span id="year"></span> Ram NS · Portfolio
+  </footer>
+
+  <script>
+    // Set current year automatically
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
